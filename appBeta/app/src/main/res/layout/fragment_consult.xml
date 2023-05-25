@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConsultFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@color/darkModePrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/etat"
+            android:layout_weight="1"
+            android:paddingRight="-25dp"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/white"
+            android:text="@string/houseState"
+           android:paddingLeft="-70dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+
+<!--        android:drawableLeft="@drawable/etat"-->
+<!--        android:drawablePadding="-29dp"-->
+<!--        android:paddingLeft="18dp"-->
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginHorizontal="0dp"
+        android:layout_marginVertical="0dp"
+
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_background"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darkModeSecondary">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <!-- Door section -->
+
+            <LinearLayout
+                android:id="@+id/doorSection"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@drawable/door"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="@string/door"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    android:id="@+id/door"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="15sp"
+
+                    />
+                <ImageView
+                    android:id="@+id/doorStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+
+            <!-- Window section -->
+
+            <LinearLayout
+                android:id="@+id/windowSection"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@drawable/window"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="@string/window"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    android:id="@+id/window"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="15sp"
+
+                    />
+                <ImageView
+                    android:id="@+id/windowStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+
+            <!-- Light section -->
+
+            <LinearLayout
+                android:id="@+id/lightSection"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@drawable/light"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="@string/light"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    android:id="@+id/light"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="15sp"
+
+                    />
+                <ImageView
+                    android:id="@+id/lightStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+            <!-- Temperature section -->
+
+            <LinearLayout
+                android:id="@+id/temperatureSection"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@drawable/temperature"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:text="@string/temperature"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    android:id="@+id/temperature"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="15sp"
+
+                    tools:ignore="DuplicateIds" />
+                <ImageView
+                    android:id="@+id/tempStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+            <!-- humidity section -->
+
+            <LinearLayout
+                android:id="@+id/humiditySection"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@drawable/humide"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:text="@string/humidite"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"/>
+
+                <TextView
+                    android:id="@+id/humidity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="15sp"
+
+                    tools:ignore="DuplicateIds" />
+
+                <ImageView
+                    android:id="@+id/humidStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

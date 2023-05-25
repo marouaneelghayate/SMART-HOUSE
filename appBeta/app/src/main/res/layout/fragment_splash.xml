@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashFragment"
+    android:background="@color/darkModePrimary">
+
+    <ImageView
+        android:id="@+id/house"
+        android:layout_width="257dp"
+        android:layout_height="222dp"
+        android:src="@drawable/house"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="322dp"
+        android:layout_height="106dp"
+        android:src="@drawable/smart_house"
+        app:layout_constraintBottom_toTopOf="@id/house"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90999997" />
+
+    <ImageView
+        android:id="@+id/aipoweredhomes"
+        android:layout_width="233dp"
+        android:layout_height="66dp"
+        android:src="@drawable/aipoweredhomes"
+        app:layout_constraintBottom_toTopOf="@id/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/house"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/start"
+        android:focusable="true"
+        android:layout_width="83dp"
+        android:layout_height="43dp"
+        android:src="@drawable/suivant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aipoweredhomes"
+        app:layout_constraintVertical_bias="0.90999997" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

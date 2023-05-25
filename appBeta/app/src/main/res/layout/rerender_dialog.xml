@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:background="@drawable/rounded_dialog"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="vous devez redémarrer l'application pour enregistrer les modification. poursuivre ?"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/restart"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#f1f1f1"
+        android:text="Redemarrer "
+        android:background="@drawable/btn_success"/>
+
+
+
+</LinearLayout>

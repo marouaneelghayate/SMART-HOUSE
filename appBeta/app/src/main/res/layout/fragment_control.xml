@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkModePrimary"
+    tools:context=".ControlFragment"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50sp">
+
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+
+            />
+        <View
+            android:id="@+id/divider"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginVertical="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+
+            android:background="@drawable/button_background"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:text="Place 5"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:id="@+id/ouvrePorte"
+                android:layout_weight="1"
+                android:background="@drawable/top_right_bottom_left"
+                android:fontFamily="@font/poppins_medium"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Place 6"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:id="@+id/fermePorte"
+                android:layout_weight="1"
+                android:background="@drawable/top_left_bottom_right"
+                android:fontFamily="@font/poppins_medium"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="place 4"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:id="@+id/ouvreFenetres"
+                android:layout_weight="1"
+                android:background="@drawable/top_right_bottom_left"
+                android:fontFamily="@font/poppins_medium"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Place 3"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:id="@+id/fermeFenetres"
+                android:layout_weight="1"
+                android:background="@drawable/top_left_bottom_right"
+                android:fontFamily="@font/poppins_medium"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Place 1"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:id="@+id/lightsOn"
+                android:layout_weight="1"
+                android:background="@drawable/top_right_bottom_left"
+                android:fontFamily="@font/poppins_medium"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Place 2"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:id="@+id/lightsOff"
+                android:layout_weight="1"
+                android:background="@drawable/top_left_bottom_right"
+                android:fontFamily="@font/poppins_medium"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="130dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="3.5dp"
+                android:text="consulter l'etat "
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:id="@+id/consult"
+                android:background="@drawable/rounded_gradient"
+                android:fontFamily="@font/poppins_medium"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="modifier une commande"
+                android:padding="3.5dp"
+                android:textColor="@color/white"
+                android:id="@+id/edit"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_gradient"
+                android:fontFamily="@font/poppins_medium"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/record"
+        android:layout_width="94dp"
+        android:layout_height="66dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="650dp"
+        android:src="@drawable/record_button" />
+
+
+
+</FrameLayout>

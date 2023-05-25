@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment"
+    android:background="@color/darkModePrimary"
+    android:orientation="vertical">
+
+    <!-- #2B2B2B -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/appareil"
+            android:layout_weight="1"
+
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/fragment2"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+<!--        android:drawableLeft="@drawable/appareil"-->
+<!--        android:drawablePadding="-10dp"-->
+<!--        android:paddingLeft="18dp"-->
+
+    </LinearLayout>
+
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_marginHorizontal="0dp"
+        android:layout_marginVertical="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_background"
+        />
+
+    <ListView
+        android:id="@+id/deviceList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/listViewDivider"
+        android:dividerHeight="1dp"
+        android:background="@color/darkModeSecondary"/>
+
+</LinearLayout>

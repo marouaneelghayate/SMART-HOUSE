@@ -1,0 +1,15 @@
+<resources>
+    <string name="welcome">BIENVENUE</string>
+    <string name="app_name">SMART HOUSE</string>
+    <string name="fragment1">CONNECTEZ-VOUS A VOTRE MAISON</string>
+    <string name="fragment2">LISTE DES APPAREILS DISPONIBLES</string>
+    <string name="fragment_edit">SELECTIONNER UNE COMMANDE</string>
+    <string name="nextButton">SUIVANT </string>
+    <string name="houseState">ÉTAT DE VOTRE MAISON</string>
+    <string name="door">PORTE</string>
+    <string name="window">FENÊTRES</string>
+    <string name="light">LAMPE</string>
+    <string name="temperature">TEMPÉRATURE</string>
+    <string name="humidite">HUMIDITÉ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>
